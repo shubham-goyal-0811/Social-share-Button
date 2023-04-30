@@ -14,13 +14,15 @@
             padding: 10px; */
             display: flex;
             flex-direction: column;
+            transition: 500ms;
+            
             box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
             vertical-align: baseline;
             position: fixed;
             top: 1px;
-            width: 70px;
+            width: 90px;
             top: 35%;
-            
+            font-size: 22px;
         }
 		.share-button 
         {
@@ -32,8 +34,9 @@
 			border-radius: 5px;
 			margin-right: 10px;
 			margin-bottom: 10px;
-            width: 60px;
-            margin: 5px;
+            width: 100%;
+            margin: 3px;
+            padding: 3px;
 		}
 
 		.share-button.facebook {
@@ -55,21 +58,37 @@
         .text1{
             background-image: url(opr.png);
             background-attachment:fixed;
-            background-repeat: repeat-y;
+            background-repeat: repeat;
             width: auto;
 
+        }
+        @media (max-width: 550px) {
+            .text{
+                padding:8px 32px;
+            }
+            .button{
+                transform: unset;
+                top: unset;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                flex-direction: row;
+                box-shadow: 4px 0 8px rgba(0,0,0,0.3);
+                padding: 16px 0;
+                justify-content: center;
+           } 
         }
 	</style>
 </head>
 <body style="background-color: black;">
     <div class="button">
-	<a target="_blank"   href="https://twitter.com/intent/tweet?text=CHECK THIS OUT: https://shubham-goyal-0811.github.io/Social-share-Button.github.io/project1.html" class="share-button">Share on Twitter</a>
-	<a target="_blank" style="font-size: 15px;"   href="https://www.facebook.com/sharer.php?u=shubham-goyal-0811.github.io/Social-share-Button.github.io/project1.html" class="share-button facebook">Share on Facebook</a>
+	<a target="_blank"   href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20website! vardhman0000.github.io/shubham/project1.html" class="share-button">Share on Twitter</a>
+	<a target="_blank"  href="https://www.facebook.com/sharer.php?u=vardhman0000.github.io/shubham/project1.html%2F" class="share-button facebook">Share on Facebook</a>
 
-	<a target="_blank"  href="https://www.linkedin.com/shareArticle?url=shubham-goyal-0811.github.io/Social-share-Button.github.io/project1.html&title=CHECK THIS OUT" class="share-button linkedin">Share on LinkedIn</a>
+	<a target="_blank"  href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fvardhman0000.github.io/shubham/project1.html%2F&title=Check%20out%20this%20cool%20website!&summary=&source=" class="share-button linkedin">Share on LinkedIn</a>
     </a>
 
-    <a target="_blank" href="https://api.whatsapp.com/send?text=shubham-goyal-0811.github.io/Social-share-Button.github.io/project1.html"
+    <a target="_blank" href="https://api.whatsapp.com/send?text=vardhman0000.github.io/shubham/project1.html"
     class="share-button whatsapp">Share on whatsapp</a>
     </div>
 
