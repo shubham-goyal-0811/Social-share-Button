@@ -10,8 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
 	<style>
         .button{
-            /* margin: 10px;
-            padding: 10px; */
             display: flex;
             flex-direction: column;
             transition: 500ms;
@@ -42,6 +40,9 @@
 		.share-button.facebook {
 			background-color: #3b5998;
 		}
+        .share-button:hover{
+            transform: scale(1.1);
+        }
 
 		.share-button.linkedin {
 			background-color: #0077b5;
@@ -50,12 +51,14 @@
             background-color: rgb(76, 192, 34);
         }
         .text{
+            
             margin: 70px;
             color: azure;
             font-family: 'Ubuntu', sans-serif;        
             /* padding: 70px; */
         }
         .text1{
+            font-size: 155 px;
             background-image: url(opr.png);
             background-attachment:fixed;
             background-repeat: repeat;
@@ -78,6 +81,18 @@
                 justify-content: center;
            } 
         }
+        body{
+            font-size: 25px;
+        }
+        #next{
+            text-align: center;
+            color: white;
+            font-size: 35 px;
+        }
+        .nextva a:hover{
+            background-color: rgb(17, 0, 255);
+            color: red;
+        }
 	</style>
 </head>
 <body style="background-color: black;">
@@ -91,7 +106,6 @@
     <a target="_blank" href="https://api.whatsapp.com/send?text=https://shubham-goyal-0811.github.io/Social-share-Button.github.io/project1.html"
     class="share-button whatsapp">Share on whatsapp</a>
     </div>
-
     <div class="text">
         <h1 style="text-align: center;">We Are ONE PIECE</h1>
         <img src="op.jpg" alt="We Are Sorry" style="max-width: 100%; height: auto;">
@@ -99,7 +113,7 @@
     </div>
     
     <div class="text" >
-        <h3 style="color: yellow;"><u>One Piece-Watching Guide</u></h3>This guide will focus on what's worth watching. One Piece has a lot of Movies, Specials, Shorts, etc. I am only adding the most important ones in order to keep the list manageable, so If the item is not listed, then it can be considered to be "Skipped" and it's probably just a commercial, a collaboration, or promotional short.</div>
+        <h3 style="color: yellow;" ><u>One Piece-Watching Guide</u></h3>This guide will focus on what's worth watching. One Piece has a lot of Movies, Specials, Shorts, etc. I am only adding the most important ones in order to keep the list manageable, so If the item is not listed, then it can be considered to be "Skipped" and it's probably just a commercial, a collaboration, or promotional short.</div>
     <div class="text text1">
         <h4>Watching Guide</h4>
         <ul>
@@ -152,5 +166,6 @@
             <ul><li>Some of the best and most memorable moments of One Piece happens during this part. By now you should be realizing why One Piece it's a masterpiece. It is just amazing that future arcs will be equal or even better than what you have experienced here.</li></ul><br><br>
         </ul>
     </div>
+    <div id="next" class="nextva"><a style="font-size: x-large;" href="zoro.html" target="_blank">Watch Anime here</a></div>
 </body>
 </html>
